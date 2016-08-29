@@ -187,24 +187,7 @@ input:checked~ label {
   #c61:focus~ #l61,
   #c62:focus~ #l62,
   #c63:focus~ #l63,
-  #c64:focus~ #l64,
-  #c65:focus~ #l65,
-  #c66:focus~ #l66,
-  #c67:focus~ #l67,
-  #c68:focus~ #l68,
-  #c69:focus~ #l69,
-  #c70:focus~ #l70,
-  #c71:focus~ #l71,
-  #c72:focus~ #l72,
-  #c73:focus~ #l73,
-  #c74:focus~ #l74,
-  #c75:focus~ #l75,
-  #c76:focus~ #l76,
-  #c77:focus~ #l77,
-  #c78:focus~ #l78,
-  #c79:focus~ #l79,
-  #c80:focus~ #l80,
-  #c81:focus~ #l81 {
+  #c64:focus~ #l64 {
     width: 46px;
     height: 46px;
     border: 3px blue solid;
@@ -212,15 +195,3 @@ input:checked~ label {
   }
 }
 
-
-/* Large desktops, 1024px and up */
-
-@media (min-width: 1440px) {
-  .box {
-    width: 54px * 9;
-    height: 54px * 9;
-  }
-  .desktop-l {
-    display: block;
-  }
-}
