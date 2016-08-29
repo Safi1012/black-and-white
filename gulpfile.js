@@ -64,7 +64,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
     .pipe($.if('*.js', $.uglify()))
     .pipe(gulpSelectors.run())
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true, removeComments: true})))
     .pipe(gulp.dest('dist'));
 });
 
