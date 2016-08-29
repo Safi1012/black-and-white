@@ -111,6 +111,9 @@ input:checked~ label {
   .desktop-ds {
     display: block;
   }
+  input:hover {
+    cursor: pointer;
+  }
   button:hover,
   button:focus {
     cursor: pointer;
