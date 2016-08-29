@@ -19,14 +19,3 @@ Go and draw something inspiring! Just open this webpage and get started:
 
 Have fun!
 
-
-# Setup
-The following list contains all steps you need to execute this project localy.
-
-1. Install Node: https://nodejs.org/en/
-2. Install Gulp: http://gulpjs.com/
-3. Navigate to the project directory and install all dependencies: `npm install`
-4. Serve the files to your browser and start drawing: `gulp serve`
-5. To generate the minified content for production, just execute: `gulp`. 
-   The generated content can be found in the */dist* folder and is less then 10 KBytes large.
-
