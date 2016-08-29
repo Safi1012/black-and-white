@@ -1,14 +1,37 @@
-$btn-width: 50px;
-$btn-height: 50px;
+$btn-size: 50px;
 $btn-border: 2px;
 
 /* Extra small devices (phones, less than 768px) */
 
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 h1 {
-  margin-top: 20px;
+  // margin-top: 20px;
   text-align: center;
   font-size: 2em;
   font-family: sans-serif;
+  height: 50%;
+}
+
+a {
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footerA {
+  width: 20%;
+  margin: auto;
 }
 
 input {
@@ -18,8 +41,8 @@ input {
 
 input[type=checkbox],
 label {
-  width: $btn-width;
-  height: $btn-height;
+  width: $btn-size;
+  height: $btn-size;
   background-color: white;
   border: 1px solid black;
   display: block;
@@ -28,21 +51,21 @@ label {
 }
 
 input:checked~ label {
-  width: $btn-width;
-  height: $btn-height;
+  width: $btn-size;
+  height: $btn-size;
   background-color: black;
 }
 
 #c1:focus~ #l1 {
-  width: $btn-width - 2px;
-  height: $btn-height - 2px;
+  width: $btn-size - 2px;
+  height: $btn-size - 2px;
   border: $btn-border blue solid;
   box-shadow: 0px 0px 0px 2px white inset;
 }
 
 .box {
-  width: calc(100vw - 80px);
-  height: calc(100vw - 20px);
+  width: ($btn-size+ 4px) * 5;
+  height: ($btn-size+ 4px) * 5;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,16 +78,53 @@ input:checked~ label {
   right: 0;
 }
 
-// /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  body {
-    background-color: grey;
+.mobile-m,
+.mobile-t,
+.desktop-ds,
+.desktop-dl {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .box {
+    width: ($btn-size+ 4px) * 6;
+    height: ($btn-size+ 4px) * 6;
+  }
+  .mobile-m {
+    display: block;
   }
 }
 
-// /* Medium devices (desktops, 992px and up) */
-// @media (min-width: 992px) {
-// }
-// /* Large devices (large desktops, 1200px and up) */
-// @media (min-width: 1200px) {
-// }
+// /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .box {
+    width: ($btn-size+ 4px) * 7;
+    height: ($btn-size+ 4px) * 7;
+  }
+  .mobile-t {
+    display: block;
+  }
+}
+
+
+/* Medium devices (desktops, 1024px and up) */
+
+@media (min-width: 1024px) {
+  .box {
+    width: ($btn-size+ 4px) * 8;
+    height: ($btn-size+ 4px) * 8;
+  }
+  .desktop-ds {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    width: ($btn-size+ 4px) * 9;
+    height: ($btn-size+ 4px) * 9;
+  }
+  .desktop-dl {
+    display: block;
+  }
+}
