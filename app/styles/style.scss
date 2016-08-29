@@ -1,10 +1,7 @@
-$btn-size: 50px;
-$btn-border: 3px;
-
-/* Small devices (smartphone, 375px and less) */
+/* Small smartphones, 375px and less */
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 2em;
   text-align: center;
   margin-top: 40px;
@@ -22,7 +19,7 @@ button {
   height: 40px;
   color: white;
   background-color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 1.3em;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -37,8 +34,8 @@ input {
 
 input[type=checkbox],
 label {
-  width: $btn-size;
-  height: $btn-size;
+  width: 50px;
+  height: 50px;
   background-color: white;
   border: 1px solid black;
   display: block;
@@ -47,14 +44,14 @@ label {
 }
 
 input:checked~ label {
-  width: $btn-size;
-  height: $btn-size;
+  width: 50px;
+  height: 50px;
   background-color: black;
 }
 
 .box {
-  width: ($btn-size+ 4px) * 5;
-  height: ($btn-size+ 4px) * 5;
+  width: 54px * 5;
+  height: 54px * 5;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -68,19 +65,19 @@ input:checked~ label {
 }
 
 .mobile-m,
-.mobile-t,
-.desktop-ds,
-.desktop-dl {
+.mobile-l,
+.desktop-s,
+.desktop-l {
   display: none;
 }
 
 
-/* Small devices (smartphone, 375px and up) */
+/* Medium smartphone, 375px and up */
 
 @media (min-width: 375px) {
   .box {
-    width: ($btn-size+ 4px) * 6;
-    height: ($btn-size+ 4px) * 6;
+    width: 54px * 6;
+    height: 54px * 6;
   }
   .mobile-m {
     display: block;
@@ -88,27 +85,27 @@ input:checked~ label {
 }
 
 
-/* Small devices (tablets, 768px and up) */
+/* Large smartphones, 768px and up */
 
 @media (min-width: 768px) {
   .box {
-    width: ($btn-size+ 4px) * 7;
-    height: ($btn-size+ 4px) * 7;
+    width: 54px * 7;
+    height: 54px * 7;
   }
-  .mobile-t {
+  .mobile-l {
     display: block;
   }
 }
 
 
-/* Medium devices (desktops, 1024px and up) */
+/* Small desktops, 1024px and up) */
 
 @media (min-width: 1024px) {
   .box {
-    width: ($btn-size+ 4px) * 8;
-    height: ($btn-size+ 4px) * 8;
+    width: 54px * 8;
+    height: 54px * 8;
   }
-  .desktop-ds {
+  .desktop-s {
     display: block;
   }
   input:hover {
@@ -125,7 +122,7 @@ input:checked~ label {
   }
   button:focus {
     outline: none;
-    border: $btn-border rgb(0, 102, 255) solid;
+    border: 3px blue solid;
   }
   #c1:focus~ #l1,
   #c2:focus~ #l2,
@@ -208,19 +205,22 @@ input:checked~ label {
   #c79:focus~ #l79,
   #c80:focus~ #l80,
   #c81:focus~ #l81 {
-    width: $btn-size - 4px;
-    height: $btn-size - 4px;
-    border: $btn-border rgb(0, 102, 255) solid;
+    width: 46px;
+    height: 46px;
+    border: 3px blue solid;
     box-shadow: 0px 0px 1px 2px white inset;
   }
 }
 
+
+/* Large desktops, 1024px and up */
+
 @media (min-width: 1440px) {
   .box {
-    width: ($btn-size+ 4px) * 9;
-    height: ($btn-size+ 4px) * 9;
+    width: 54px * 9;
+    height: 54px * 9;
   }
-  .desktop-dl {
+  .desktop-l {
     display: block;
   }
 }
