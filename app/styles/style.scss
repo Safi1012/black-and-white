@@ -65,6 +65,16 @@ input:checked~ label {
 }
 
 
+/* Landscape, 460px and less */
+
+@media (max-height: 460px) {
+  form,
+  h1 {
+    display: none;
+  }
+}
+
+
 /* Large smartphones, 375px and up */
 
 @media (min-width: 375px) {
@@ -80,6 +90,12 @@ input:checked~ label {
   input:checked~ label {
     width: 50px;
     height: 50px;
+  }
+  @media (max-height: 520px) {
+    form,
+    h1 {
+      display: none;
+    }
   }
 }
 
@@ -99,6 +115,12 @@ input:checked~ label {
   input:checked~ label {
     width: 60px;
     height: 60px;
+  }
+  @media (max-height: 580px) {
+    form,
+    h1 {
+      display: none;
+    }
   }
 }
 
@@ -194,5 +216,11 @@ input:checked~ label {
     height: 56px;
     border: 3px blue solid;
     box-shadow: 0px 0px 1px 2px white inset;
+  }
+  @media (max-height: 590px) {
+    form,
+    h1 {
+      display: none;
+    }
   }
 }
